@@ -1,0 +1,289 @@
+@import url('http://fonts.cdnfonts.com/css/reckoner');
+:root{
+    --background-color: #17181f;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--background-color);
+    margin: 0;
+   
+    /*font-family: 'Reckoner', sans-serif;*/
+    font-family: 'Reckoner Bold', sans-serif;
+}
+.name p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .same p a {
+    text-decoration: none;
+    color: white;
+}
+footer .same1 p a {
+    text-decoration: none;
+    color: white;
+}
+footer .same p a:hover {
+    color: red;
+}
+footer .same1 p a:hover {
+    color: red;
+}
+footer{
+    color: white;
+}
+@media(min-width: 768px){
+.bar{
+    display: none;
+} 
+#close {
+    display: none;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    padding-left: 35px;
+}
+
+    
+
+#link {
+    width: 50%;
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+}
+#links {
+    font-family: 'Reckoner', sans-serif;
+    width: 50%;
+    font-size: 18px;
+}
+
+#links ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#links ul li{
+    list-style: none;   
+}
+
+#links ul li a {
+    color: white;
+    text-decoration: none;
+}
+#links ul li a:hover {
+    color: red;
+    
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+}
+main div img {
+    border-radius: 25px;
+    width: 500px;
+    z-index: 2;
+}
+.welcome {
+    color: white;
+}
+.welcome p {
+    font-size: 17px;
+    
+    line-height: 19px;
+}
+.image p {
+    display: none;
+}
+
+footer{
+    padding-top: 130px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 769px){
+    /*----------Nav---------------*/
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+.bar{
+    display: block;
+    font-size: 30px;  
+}
+#close a span{
+    display: block;
+    font-size: 30px; 
+    text-decoration: none; 
+}
+.bar a{
+    display: block;
+    color: white;
+}
+.name {
+    color: white;
+    font-size: 25px;
+    
+}
+.name p {
+    margin: 0;
+    padding-right: 10px;
+}
+
+#links ul{
+    list-style: none;
+    
+    
+}
+#links ul li a  {
+    
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    
+    
+    
+}
+#links ul li:hover{
+    color: red;
+}
+#links:target{
+	left: 0;
+	transition: all 0.5s;
+} 
+#close:target{
+	right: 0;
+	transition: all 0.5s;
+} 
+#links {
+	position: fixed;
+	left: -100%;
+	top: 0;
+	width: 100%;
+    background-color: var(--background-color);
+	  }
+#close {
+    padding: 20px;
+    padding-bottom: 0;
+}
+#close a {
+    text-decoration: none;
+}
+
+
+/*----------Welcome---------------*/
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-bottom: 20px;
+    color: white;
+    
+}
+.welcome h1 {
+    display: flex;
+    align-self: center;
+    
+}
+
+.welcome p {
+    display: flex;
+    align-self: center;
+    font-family: 'Reckoner', sans-serif;
+}
+    .welcome p {
+        display: none;
+    }
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main div img {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+}
+.image p {
+    display: flex;
+    align-self: center;
+    font-family: 'Reckoner', sans-serif;
+    color: white;
+    padding: 15px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+}
